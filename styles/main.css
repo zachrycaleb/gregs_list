@@ -1,0 +1,14 @@
+body {
+  background: white;
+}
+.querybox {
+  transition: left 300ms;
+  min-height: 35px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  margin-top: 15px;
+  padding: 0 .5em;
+  position: relative;
+  white-space: nowrap;
+}

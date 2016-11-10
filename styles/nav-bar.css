@@ -1,0 +1,40 @@
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+nav {
+  height: 60px;
+  background-color: grey;
+  position: fixed;
+  font-size: 30px;
+  font-family: arial;
+  width: 100%;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+ul.topnav li {
+  float: left;
+  display: inline-block;
+  text-align: right;
+}
+li a {
+  display: inline-block;
+  color: purple;
+  text-align: right;
+  padding: 10px;
+  text-decoration: none;
+}
+li:first-child {
+  border: none;
+}
+nav li::after {
+  content: "";
+  margin-left: 5px;
+}
+nav a:hover {
+  color: black;
+}
