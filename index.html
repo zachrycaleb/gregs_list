@@ -1,33 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>CSS Layout Exercises | position property</title>
-	<meta charset="utf-8" name="description" content="Layout exercise on `position` property for Thinkful's front end web development course">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/nav-bar.css">
+	<!--title/ descr-->
+	<meta charset="utf-8" name="description" content="Posting, surfing, and fulfilling the consumer classified needs.">
+	<title>Greg's List Page Results</title>
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+	<!--links-->
+	<link rel="stylesheet" type="text/css" href="styles/design.css">
+	<link rel="stylesheet" type="text/css" href="/images/magnifying-glass.png">
 </head>
 <body>
-	<nav class="container">
-		<ul class="topnav" id="myTopnav">
-			<li style="float:left"><a class="active" href="index.html">Greg's List</a></li>
-			<li><a href="post.html">Post</a></li>
-			<li><a href="account.html">Account</a></li>
+	<!--top nav bar-->
+	<nav class="top">
+		<h1>Greg's List</h1>
+		<ul>
+			<li class="head">Post</li>
+			<li class="head">Account</li>
 		</ul>
 	</nav>
-	<main>
-		<!-- <div class="querybox">
-			<input type="text" placeholder="Search software jobs" name="query" id="query" data-autocomplete="Search"> -->	
-		<div class="box-parent">
-			<div class='centered'>
-				<div class='box box_half green'></div>
-				<div class='box box_half blue'></div>
-			</div>
-			<div class='centered'>
-				<div class='box box_third grey'></div>
-				<div class='box box_third black'></div>
-				<div class='box box_third orange'></div>
-			</div>
-		</div>
+	<!--search bar/ nav bar-->
+	<section>
+		<form action="">
+			<input type="text" class="search" placeholder="Search software jobs">
+			<button type="submit" class="submit">
+				<img src="images/magnifying-glass.png" class="magnifying-glass-icon"> 
+			</button>	
+		</form>
+			<nav class="search-link">
+				<ul class="group">
+					<li>&lt; prev</li>
+					<li>1 to 100 of 179</li>
+					<li>next &gt;</li>
+				</ul>
+			</nav>
+	</section>
+	<!--rendered results-->
+	<main class="results">
+		<ul>
+			<li>June 22</li>
+			<li><a href="">Technical Project Manager</a></li>
+			<li>Midtown East</li>
+		</ul>
+		<ul>
+			<li>June 21</li>
+			<li><a href="">Frontend Developer</a></li>
+			<li>SoHo</li>
+		</ul>
+		<ul>
+			<li>June 20</li>
+			<li><a href="">Senior Python Developer/ Cofounder</a></li>
+			<li>Flatiron</li>
+		</ul>	
 	</main>
 </body>
 </html>
